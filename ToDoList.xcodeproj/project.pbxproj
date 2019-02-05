@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1A93F66A220A0E6000E7E9D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F669220A0E6000E7E9D1 /* AppDelegate.swift */; };
-		1A93F66C220A0E6000E7E9D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F66B220A0E6000E7E9D1 /* ViewController.swift */; };
 		1A93F66F220A0E6000E7E9D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A93F66D220A0E6000E7E9D1 /* Main.storyboard */; };
 		1A93F672220A0E6000E7E9D1 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F670220A0E6000E7E9D1 /* ToDoList.xcdatamodeld */; };
 		1A93F674220A0E6200E7E9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A93F673220A0E6200E7E9D1 /* Assets.xcassets */; };
 		1A93F677220A0E6200E7E9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A93F675220A0E6200E7E9D1 /* LaunchScreen.storyboard */; };
 		1A93F682220A0E6200E7E9D1 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F681220A0E6200E7E9D1 /* ToDoListTests.swift */; };
 		1A93F68D220A0E6200E7E9D1 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F68C220A0E6200E7E9D1 /* ToDoListUITests.swift */; };
+		1A93F69B220A136700E7E9D1 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F69A220A136700E7E9D1 /* ToDoListTableViewController.swift */; };
+		1A93F69C220A136700E7E9D1 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F69A220A136700E7E9D1 /* ToDoListTableViewController.swift */; };
+		1A93F69E220A13BE00E7E9D1 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F69D220A13BE00E7E9D1 /* ToDoListItem.swift */; };
+		1A93F69F220A13BE00E7E9D1 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F69D220A13BE00E7E9D1 /* ToDoListItem.swift */; };
+		1A93F6A1220A140500E7E9D1 /* ToDoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */; };
+		1A93F6A2220A140500E7E9D1 /* ToDoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		1A93F666220A0E6000E7E9D1 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A93F669220A0E6000E7E9D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A93F66B220A0E6000E7E9D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A93F66E220A0E6000E7E9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A93F671220A0E6000E7E9D1 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		1A93F673220A0E6200E7E9D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,9 @@
 		1A93F688220A0E6200E7E9D1 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A93F68C220A0E6200E7E9D1 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		1A93F68E220A0E6200E7E9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A93F69A220A136700E7E9D1 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
+		1A93F69D220A13BE00E7E9D1 /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
+		1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +107,14 @@
 			isa = PBXGroup;
 			children = (
 				1A93F669220A0E6000E7E9D1 /* AppDelegate.swift */,
-				1A93F66B220A0E6000E7E9D1 /* ViewController.swift */,
 				1A93F66D220A0E6000E7E9D1 /* Main.storyboard */,
 				1A93F673220A0E6200E7E9D1 /* Assets.xcassets */,
 				1A93F675220A0E6200E7E9D1 /* LaunchScreen.storyboard */,
 				1A93F678220A0E6200E7E9D1 /* Info.plist */,
 				1A93F670220A0E6000E7E9D1 /* ToDoList.xcdatamodeld */,
+				1A93F69A220A136700E7E9D1 /* ToDoListTableViewController.swift */,
+				1A93F69D220A13BE00E7E9D1 /* ToDoListItem.swift */,
+				1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -259,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A93F66C220A0E6000E7E9D1 /* ViewController.swift in Sources */,
 				1A93F672220A0E6000E7E9D1 /* ToDoList.xcdatamodeld in Sources */,
 				1A93F66A220A0E6000E7E9D1 /* AppDelegate.swift in Sources */,
+				1A93F69B220A136700E7E9D1 /* ToDoListTableViewController.swift in Sources */,
+				1A93F6A1220A140500E7E9D1 /* ToDoListRepository.swift in Sources */,
+				1A93F69E220A13BE00E7E9D1 /* ToDoListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A93F682220A0E6200E7E9D1 /* ToDoListTests.swift in Sources */,
+				1A93F6A2220A140500E7E9D1 /* ToDoListRepository.swift in Sources */,
+				1A93F69C220A136700E7E9D1 /* ToDoListTableViewController.swift in Sources */,
+				1A93F69F220A13BE00E7E9D1 /* ToDoListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
