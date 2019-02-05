@@ -11,7 +11,7 @@ import UIKit
 final class ToDoListTableViewController: UITableViewController {
 
     // MARK: - Properties
-    var todoListItems: [ToDoListItem]?
+    private var todoListItems: [ToDoListItem]?
     fileprivate lazy var todoListRepo: ToDoListRepository = {
         return ToDoListRepository(delegate: self)
     }()
