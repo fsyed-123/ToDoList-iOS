@@ -20,6 +20,8 @@
 		1A93F69F220A13BE00E7E9D1 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F69D220A13BE00E7E9D1 /* ToDoListItem.swift */; };
 		1A93F6A1220A140500E7E9D1 /* ToDoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */; };
 		1A93F6A2220A140500E7E9D1 /* ToDoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */; };
+		1A93F6A4220A237600E7E9D1 /* AddToDoListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F6A3220A237600E7E9D1 /* AddToDoListItemViewController.swift */; };
+		1A93F6A5220A237600E7E9D1 /* AddToDoListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93F6A3220A237600E7E9D1 /* AddToDoListItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		1A93F69A220A136700E7E9D1 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		1A93F69D220A13BE00E7E9D1 /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
 		1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRepository.swift; sourceTree = "<group>"; };
+		1A93F6A3220A237600E7E9D1 /* AddToDoListItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoListItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 				1A93F69A220A136700E7E9D1 /* ToDoListTableViewController.swift */,
 				1A93F69D220A13BE00E7E9D1 /* ToDoListItem.swift */,
 				1A93F6A0220A140500E7E9D1 /* ToDoListRepository.swift */,
+				1A93F6A3220A237600E7E9D1 /* AddToDoListItemViewController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -269,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A93F672220A0E6000E7E9D1 /* ToDoList.xcdatamodeld in Sources */,
+				1A93F6A4220A237600E7E9D1 /* AddToDoListItemViewController.swift in Sources */,
 				1A93F66A220A0E6000E7E9D1 /* AppDelegate.swift in Sources */,
 				1A93F69B220A136700E7E9D1 /* ToDoListTableViewController.swift in Sources */,
 				1A93F6A1220A140500E7E9D1 /* ToDoListRepository.swift in Sources */,
@@ -281,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A93F682220A0E6200E7E9D1 /* ToDoListTests.swift in Sources */,
+				1A93F6A5220A237600E7E9D1 /* AddToDoListItemViewController.swift in Sources */,
 				1A93F6A2220A140500E7E9D1 /* ToDoListRepository.swift in Sources */,
 				1A93F69C220A136700E7E9D1 /* ToDoListTableViewController.swift in Sources */,
 				1A93F69F220A13BE00E7E9D1 /* ToDoListItem.swift in Sources */,

@@ -15,6 +15,11 @@ final class ToDoListTableViewController: UITableViewController {
     fileprivate lazy var todoListRepo: ToDoListRepository = {
         return ToDoListRepository(delegate: self)
     }()
+    fileprivate lazy var addToDoListItemVC: AddToDoListItemViewController? = {
+        let todoListItemVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "addToDoItemVC") as? AddToDoListItemViewController
+        todoListItemVC?.delegate = self
+        return todoListItemVC
+    }()
 
     // MARK: - View Lifecycle
 
@@ -22,7 +27,20 @@ final class ToDoListTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "To Do"
         self.tableView.delegate = self
+    }
+
+    override internal func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         todoListRepo.getToDoListItems()
+    }
+
+    // MARK: - Storyboard Actions
+    @IBAction func addNewTapped(_ sender: Any) {
+        DispatchQueue.main.async {
+            if let addVC = self.addToDoListItemVC {
+                self.present(addVC, animated: true, completion: nil)
+            }
+        }
     }
 }
 
@@ -72,5 +90,11 @@ extension ToDoListTableViewController: ToDoListDelegate {
 
     func didFailToFetchToDoListItems() {
         print("Dangit! We can't display any todo items")
+    }
+}
+
+extension ToDoListTableViewController: AddToDoListItemDelegate {
+    func didFinishAddingToDoListItem() {
+        todoListRepo.getToDoListItems()
     }
 }

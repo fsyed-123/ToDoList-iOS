@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct ToDoListItem: Decodable {
+public struct ToDoListItem: Codable {
 
     // Id
-    let id: Int
+    let id: Int?
 
     // Title
     let title: String
